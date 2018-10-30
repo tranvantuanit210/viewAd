@@ -22,8 +22,6 @@ namespace ViewAD
         {
             CefSettings settings = new CefSettings();
             // Initialize cef with the provided settings
-            settings.CefCommandLineArgs.Add("proxy-server", "200.29.191.149:3128");
-            settings.UserAgent = "My/Custom/User-Agent-AndStuff";
             Cef.Initialize(settings);
             // Create a browser component
             chromeBrowser = new ChromiumWebBrowser("https://www.google.com");
